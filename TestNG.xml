@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Features">
-    <test name="AnnotationsOrderingTest">
+    <!--    <test name="AnnotationsOrderingTest">-->
+    <!--        <classes>-->
+    <!--            <class name="test.TestAnnotationAttributes" />-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <!--    For Grouping-->
+    <test name="TestNGGrouping">
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+            </run>
+        </groups>
         <classes>
-            <class name="testClasses.TestAnnotationAttributes" />
+            <class name="testClasses.GroupingDemo" />
         </classes>
     </test>
 </suite>
