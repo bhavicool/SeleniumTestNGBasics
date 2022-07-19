@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Features">
-    <!--    <test name="AnnotationsOrderingTest">-->
-    <!--        <classes>-->
-    <!--            <class name="test.TestAnnotationAttributes" />-->
-    <!--        </classes>-->
-    <!--    </test>-->
+<!--    <parameter name="country" value="India"></parameter>-->
+<!--        <test name="AnnotationsOrderingTest">-->
+<!--            <classes>-->
+<!--                <class name="testClasses.DataProviderTest" />-->
+<!--            </classes>-->
+<!--        </test>-->
     <!--    For Grouping-->
     <test name="TestNGGrouping">
         <groups>
             <run>
                 <include name="Smoke"></include>
+                <exclude name="Regression"></exclude>
             </run>
         </groups>
         <classes>
