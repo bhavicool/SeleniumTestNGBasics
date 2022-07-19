@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Features">
-<!--    <parameter name="country" value="India"></parameter>-->
+<suite name="TestNG Features" >
+
 <!--        <test name="AnnotationsOrderingTest">-->
 <!--            <classes>-->
-<!--                <class name="testClasses.DataProviderTest" />-->
+<!--                <class name="testClasses.AnnotationsOrdering" />-->
 <!--            </classes>-->
 <!--        </test>-->
-    <!--    For Grouping-->
-    <test name="TestNGGrouping">
-        <groups>
-            <run>
-                <include name="Smoke"></include>
-                <exclude name="Regression"></exclude>
-            </run>
-        </groups>
+        <parameter name="country" value="India"></parameter>
+    <test name="DataProviderTest">
         <classes>
-            <class name="testClasses.GroupingDemo" />
+            <class name="testClasses.DataProviderTest" />
         </classes>
     </test>
+<!--        For Grouping-->
+<!--    <test name="TestNGGrouping">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Smoke"></include>-->
+<!--                <exclude name="Regression"></exclude>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="testClasses.GroupingDemo" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="ExcelDataProviderTest">-->
+<!--        <classes>-->
+<!--            <class name="testClasses.DataProviderExcelTest" />-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
+<!--&lt;!&ndash;    For parallel run of test cases&ndash;&gt;-->
+<!--    <suite name="TestNG Features" parallel="methods">-->
+<!--    <test name="TestNGParallelRun">-->
+<!--        <classes>-->
+<!--            <class name="testClasses.ParallelTestDemo" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->

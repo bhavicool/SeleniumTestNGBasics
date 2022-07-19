@@ -1,3 +1,10 @@
-testClasses\TestAnnotationAttributes.class
-testClasses\DataProviderTest.class
+testClasses\GroupingDemo.class
 testClasses\AnnotationsOrdering.class
+page\MaintenancePage.class
+testClasses\OrangeHRMTestNG.class
+testClasses\DataProviderTest.class
+page\HomePage.class
+page\DashboardPage.class
+testClasses\ParallelTestDemo.class
+testClasses\DataProviderExcelTest.class
+testClasses\TestAnnotationAttributes.class
