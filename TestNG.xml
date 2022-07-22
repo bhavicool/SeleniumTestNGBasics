@@ -31,7 +31,7 @@
 <!--        </classes>-->
 <!--    </test>-->
 </suite>
-<!--&lt;!&ndash;    For parallel run of test cases&ndash;&gt;-->
+<!--    For parallel run of test cases-->
 <!--    <suite name="TestNG Features" parallel="methods">-->
 <!--    <test name="TestNGParallelRun">-->
 <!--        <classes>-->

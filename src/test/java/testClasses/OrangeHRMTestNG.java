@@ -3,6 +3,7 @@ package testClasses;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -35,14 +36,15 @@ public class OrangeHRMTestNG {
         driver.close();
     }
 
-    @Test(priority = 1)
+    @Test
     public void testCase1() throws InterruptedException {
         homePage.loginFunctionality(driver);
+        Thread.sleep(2000);
 
-        dashboardPage.dashboardFlow(driver);
+        int actualQuickLaunchListCount=dashboardPage.dashboardFlow(driver);
+        Assert.assertEquals(actualQuickLaunchListCount,5);
 
         maintenancePage.maintenanceFlow(driver);
-
         Thread.sleep(3000);
     }
 }

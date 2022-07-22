@@ -22,10 +22,10 @@ public class DataProviderTest {
         System.out.println("Username is :"+userName+" Password is:"+password);
     }
 
-    @Test
-    @Parameters("country")
-    public void getCountry(String country)
-    {
-        System.out.println("country is:"+ country);
-    }
+//    @Test
+//    @Parameters("country")
+//    public void getCountry(String country)
+//    {
+//        System.out.println("country is:"+ country);
+//    }
 }

@@ -27,4 +27,14 @@ public class ParallelTestDemo {
         Thread.sleep(3000);
         driver.quit();
     }
+
+    @Test
+    public void testCase3() throws InterruptedException {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.gmail.com/");
+        driver.manage().window().maximize();
+        Thread.sleep(3000);
+        driver.quit();
+    }
 }
